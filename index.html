@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Handson 3</title>
+</head>
+<body>
+    <h1>JS Handson 3</h1>
+    <h2>Iteration Statement</h2>
+<!-- Question's and Answer's -->
+<p class="ques"><span>1. Find the number of digits </span><br>Take a number from the user and print the count of digits in that number</p>
+<p class="ans"><span class="anss"> Ans -</span> <pre>
+    
+const Find_Digits = (N) => 
+{
+  let occur=0;
+  while(N>0){
+    let rep=(N%10);
+    if(rep>(-1)){
+    occur=occur+1;
+    }
+      N=parseInt(N/10);
+
+  }
+  return (occur);
+
+};
+</pre></p>
+
+<p class="ques"><span>2. Find the Fives. </span><br> Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const Find_Five = (N) => 
+{
+	 let occur=0;
+	 while(N>0){
+	   let rem=(N%10);
+	   if(rem==5){
+	     occur=occur+1;
+	   }
+	   	 N=parseInt(N/10);
+	 }
+	 return (occur);
+};
+</pre></p>
+
+<p class="ques"><span>3. Find Sum </span><br> You are given an integer N, and your task is to find the sum of all the even integers starting from 1 upto N (N inclusive).</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const findSum = (n) => {
+        var sum=0;
+        var i;
+        for(i=0;i<=n;i++){
+          if(i%2===0){
+          sum+=i;
+          }
+          
+        }
+        return sum;
+       };
+</pre></p>
+
+<p class="ques"><span>4. Find the sum of the digits of a given number. </span><br> Write a program that takes a number from the user and get the sum of the digits present in the number.</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const Number_Sum = (N) => 
+{
+	sum=0;
+	while(N>0){
+	  let add=(N%10);
+	  if(add>0){
+	    sum=add+sum;
+	  }
+	  N=parseInt(N/10);
+	}
+	return (sum);
+};
+</pre></p>
+
+<p class="ques"><span>5. Print the Odds. </span><br> Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const Print_Odd = (N) => 
+{
+	console.log(2) ;
+	for(i=2;i<=N;i++){
+	  if(i%2!==0){
+	    console.log(i);
+	  }
+	}
+};
+</pre></p>
+
+<p class="ques"><span>6. Print the Pattern. </span><br> Write a program which ask user for no of lines and print a pattern using an asterik .</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const Print_pattern = (N) => 
+{
+
+let star=" ";
+for (let i=1;i<=N;i++){
+  for(let j=1; j<=i; j++){
+    star=star+"*";
+  }
+  star=star+"\n";
+}
+console.log(star);
+};
+</pre></p>
+
+<p class="ques"><span>7. Check whether a Number is a prime or not. </span><br> Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+<p class="ans"><span class="anss"> Ans -</span> <pre>
+    const Prime_Check = (N) => 
+{
+	 if(N==1 || N==2){
+	   return ("NO");
+	 }
+	 let i;
+	 for(i=2;i< N;i++){
+	   if(N%i===0){
+	     return ("NO");
+	   }
+	   else if(N%3===0){
+	     return ("NO");
+	   }
+	   else{
+	     return ("YES");
+	   }
+	 }
+	
+};
+</pre></p>
+
+<p class="ques"><span>8. Print Numbers </span><br>You are given an integer <i>N,</i> and your task is to print all the integers starting from <b>1</i> </b>till <i>N</i>(<i>N</i> inclusive).</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const printNumbers = (n) => {
+        for(i=1;i<=n;i++){
+          console.log(i);
+        }
+    };
+</pre></p>
+
+<p class="ques"><span>9. Print the Table </span><br> Write a program which takes a number from user and print the table.</p>
+<p class="ans"><span class="anss"> Ans -</span><pre>
+    const Print_Table = (N) => 
+{
+	for(let i=1;i<=10;++i){
+	  console.log(N + " * " + i + " = " + N * i);
+	}
+};
+</pre></p>
+    
+</body>
+</html>

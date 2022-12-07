@@ -1,0 +1,27 @@
+body{
+    margin: 40px;
+}
+h1,h2{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.ques{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ans{
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+pre{
+    margin-left: 100px;
+}
+span{
+    background-color: red;
+    color: white;
+}
+.anss{
+    background-color: green;
+    color: white;
+}
